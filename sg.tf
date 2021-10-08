@@ -1,5 +1,5 @@
 resource "aws_security_group" "vpc-ssh" {
-  name        = "vpc-ssh"
+  name        = "vpc-ssh-gopal"
   description = "Allow ssh inbound traffic"
  
 
@@ -37,7 +37,7 @@ resource "aws_security_group" "vpc-ssh" {
   }
 }
 resource "aws_security_group" "vpc-web" {
-  name        = "vpc-web"
+  name        = "vpc-web-gopal"
   description = "Allow 80 inbound traffic"
  
 

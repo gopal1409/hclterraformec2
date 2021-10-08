@@ -6,7 +6,7 @@ resource "aws_instance" "ec2_demo"{
     #instance_type = var.instance_type_map["prod"] #for map
     user_data = file("${path.module}/app1-install.sh")
   # vpc_security_group_ids = [aws_security_group.vpc-ssh.id,aws_security_group.vpc-web.id]
-   count = 2
+   count = 2 #and create your first instace
     tags = {
         "Name"= "count-Demo-${count.index}" 
     }

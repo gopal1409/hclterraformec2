@@ -11,7 +11,7 @@ variable "instance_type" {
 }
 variable "instance_type_list" {
   description = "aws instance type"
-  type = string
+  type = list(string)
   default = ["t3.micro","t2.micro","t3.large"]
 }
 variable "instance_type_map" {
